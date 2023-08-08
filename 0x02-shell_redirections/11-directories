@@ -1,2 +1,3 @@
 #!/bin/bash
-find . -type d -not -name | wC -l
+find . -mindepth 1 -type d | wc -l
+
