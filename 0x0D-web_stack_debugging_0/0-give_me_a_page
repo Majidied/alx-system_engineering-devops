@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# This script starts a apache2 server
+
+service apache2 start
