@@ -8,7 +8,6 @@ def recurse(subreddit, hot_list=[], after=None):
     url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit, after)
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
-    response.raise_for_status()
     if response.status_code != 200:
         return None
     after = response.json().get('data').get('after')
