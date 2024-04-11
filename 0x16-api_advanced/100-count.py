@@ -5,7 +5,8 @@ import requests
 
 def count_words(subreddit, word_list, word_count={}, after=None):
     """Function to query number of subscribers of a subreddit"""
-    url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit, after)
+    url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(
+        subreddit, after)
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
     response.raise_for_status()
