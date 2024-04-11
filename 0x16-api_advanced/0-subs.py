@@ -1,6 +1,6 @@
+#!/usr/bin/python3
 import requests
 
-#!/usr/bin/python3
 """
 Module to query number of subscribers of a subreddit
 """
